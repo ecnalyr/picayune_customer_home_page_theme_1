@@ -1,0 +1,33 @@
+@import "../../css/mixins.scss";
+
+.b-breadcrumbs {
+  @include clear-fix;
+  margin-left: 10px;
+  li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+
+    span, a {
+      @include font(10);
+    }
+    a:hover {
+      opacity: 0.5;
+    }
+
+    &.back {
+      font-size: $default-fz + px;
+      a {
+        @include font(12, 15);
+      }
+    }
+  }
+}
+
+.f-breadcrumbs * {
+  color: $c-white;
+}
+
+.h-breadcrumbs {
+  margin-bottom: 5px;
+}

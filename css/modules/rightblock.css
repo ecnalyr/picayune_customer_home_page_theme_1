@@ -1,0 +1,35 @@
+.l-rightsidebar .h-info {
+  padding: 10px;
+  color: #fff; }
+  .l-rightsidebar .h-info * {
+    color: #fff; }
+  .l-rightsidebar .h-info input, .l-rightsidebar .h-info textarea {
+    color: black; }
+.l-rightsidebar .b-phone {
+  font-size: 3em;
+  line-height: 1.23077;
+  font-weight: bold; }
+.l-rightsidebar .b-website {
+  font-size: 1.23077em;
+  line-height: 1;
+  font-weight: bold; }
+  .l-rightsidebar .b-website:hover {
+    opacity: 0.5; }
+.l-rightsidebar .b-duty {
+  font-size: 1.23077em;
+  line-height: 1.23125;
+  font-weight: bold;
+  border-collapse: border-collapse;
+  border-spacing: 0; }
+  .l-rightsidebar .b-duty td {
+    padding: 5px; }
+.l-rightsidebar .b-credit_card {
+  margin: 20px 20px 10px 0; }
+.l-rightsidebar address {
+  font-size: 1em;
+  line-height: 1.23077;
+  font-style: italic; }
+.l-rightsidebar .b-email {
+  font-size: 1.53846em;
+  line-height: 1.2;
+  font-style: italic; }

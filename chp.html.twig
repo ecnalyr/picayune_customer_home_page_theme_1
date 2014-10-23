@@ -1,0 +1,80 @@
+{% extends '::chp.base.html.twig' %}
+
+{% block meta %}
+    {{ parent() }}
+    {% if page_keywords %}
+        <meta name="keywords" content="{{ page_keywords }}">
+    {% endif %}
+    {% if page_description %}
+        <meta name="description" content="{{ page_description }}">
+    {% endif %}
+{% endblock %}
+{% block title %}{{ page_title|default(page_name ~ ' | Corpus Christi Business News') }}{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/base.css') }}">
+    <link type="text/css" rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/layout.css') }}">
+    <!-- Modules -->
+    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/breadcrumb.css') }}">
+    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/btns.css') }}">
+    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/accordion.css') }}">
+    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/forms.css') }}">
+    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/rightblock.css') }}">
+    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/leftblock.css') }}">
+    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/articles.css') }}">
+    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/footer.css') }}">
+    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/content.css') }}">
+    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/header.css') }}">
+    <!-- End Modules -->
+    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/states.css') }}">
+{% endblock %}
+
+{% block body %}
+    <header class="l-container">
+        <ul class="b-breadcrumbs f-breadcrumbs h-breadcrumbs">
+            <li class="back"><a class="b-btn-sm f-btn-sm b-btn-sm_black" href="javascript: history.go(-1)">Back</a>&nbsp;»&nbsp;</li>
+            <li><span class="b-breadcrumbs-current f-breadcrumbs-current">{{ page_name }}</span></li>
+            <li>{{ page_edit() }}</li>
+        </ul>
+        {% if logo_image %}
+            <div class="b-logo">
+                <img src="{{ logo_image }}">
+            </div>
+        {% endif %}
+    </header>
+    <div class="l-container">
+        <div class="b-content_wr">
+            {{ slider()|raw }}
+            <div class="l-content">
+                <div class="l-leftsidebar">
+                    <h1>{{ page_name }}</h1>
+                    <article>{{ content }}</article>
+                </div>
+                <div class="l-rightsidebar">
+                    <aside class="radius_10">
+                        {{ social_media_links_widget() }}
+                        {{ ad_rotator() }}
+                        {{ coupons() }}
+                        {{ phones() }}
+                        {{ customer_website() }}
+                        {{ fax()}}
+                        {{ addresses() }}
+                        {{ email_form() }}
+                        {{ opentable_widget() }}
+                        {{ miscellaneous_text() }}
+                        {{ expedia() }}
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            {{ footer_text }}
+        </footer>
+    </div>
+    <link rel='stylesheet' href="{{ asset('bundles/picayuneapplication/opentable/opentable.css') }}">
+{% endblock %}

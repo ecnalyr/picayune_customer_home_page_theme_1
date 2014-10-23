@@ -1,0 +1,13 @@
+@import "../../css/mixins.scss";
+
+.l-leftsidebar {
+  color: #222;
+
+  img {
+    @include img-responsive;
+    @include border-radius(4px);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    padding: 2px;
+  }
+}

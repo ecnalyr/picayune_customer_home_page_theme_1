@@ -1,0 +1,9 @@
+name: "Customer Home Page Theme 1"
+systemName: "customer_home_page_theme_1"
+version: "1.0"
+templates:
+    CHP:
+        -
+            name: "Customer Home Page Theme 1"
+            systemName: "chpt1"
+            file: "chp.html.twig"

@@ -1,0 +1,56 @@
+@import "../css/mixins.scss";
+
+.l-container {
+  @include center;
+  max-width: 1000px;
+  width: 100%;
+  @media only screen and (min-width: $break-tablet) and (max-width: $break-medium - 21) {
+    width: 740px;
+  }
+  @media only screen and (min-width: $break-smart-md) and (max-width: $break-tablet - 1) {
+    width: 500px;
+  }
+  @media only screen and (min-width: $break-smart-p) and (max-width: $break-smart-md - 1) {
+    width: 460px;
+  }
+  @media only screen and (min-width: $break-sm) and (max-width: $break-smart-p - 1) {
+    width: 300px;
+  }
+}
+
+.l-content {
+  @include clear-fix;
+}
+
+.l-leftsidebar {
+  width: 65%;
+  padding: 0 10px;
+  float: left;
+  @media only screen and (min-width: $break-smart-l) and (max-width: $break-tablet) {
+    width: 100%;
+    max-width: 375px;
+    padding: 0;
+  }
+  @media only screen and (min-width: $break-sm) and (max-width: $break-tablet - 1) {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+.l-rightsidebar {
+  @include border-radius(10px);
+  float: right;
+  width: 35%;
+  padding: 10px 10px 0;
+  @media only screen and (min-width: $break-smart-l) and (max-width: $break-tablet) {
+    width: 100%;
+    max-width: 300px;
+    padding: 0;
+  }
+  @media only screen and (max-width: $break-tablet - 1) {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+}

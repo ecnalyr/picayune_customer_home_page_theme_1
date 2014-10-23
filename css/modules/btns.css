@@ -1,0 +1,90 @@
+.h-breadcrumbs {
+  margin-bottom: 5px; }
+
+.b-btn-sm {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 5px;
+  vertical-align: middle; }
+
+.b-btn-sm_orange {
+  background: #f27900; }
+
+.b-btn-sm_green {
+  background: #3db237; }
+
+.b-btn-sm_black {
+  background: #000; }
+
+.f-btn-sm {
+  font-size: 0.92308em;
+  line-height: 1.2;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.no-print {
+  font-size: 1em;
+  line-height: 1.38462;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  display: block;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  padding: 6px 0;
+  text-align: center;
+  margin: 20px 0; }
+  .no-print:hover {
+    background: #000;
+    color: #fff; }
+
+/*Social*/
+.btn-social {
+  background-position: left top;
+  background-repeat: no-repeat;
+  display: block;
+  height: 33px;
+  width: 33px; }
+  .btn-social:hover {
+    background-position: left bottom; }
+  .btn-social.btn-facebook {
+    background-image: url("../../img/bn_facebook.png"); }
+  .btn-social.btn-twitter {
+    background-image: url("../../img/bn_twitter.png"); }
+  .btn-social.btn-pinterest {
+    background-image: url("../../img/bn_pinterest.png"); }
+  .btn-social.btn-googleplus {
+    background-image: url("../../img/bn_google.png"); }
+
+.b-social-btns {
+  padding: 10px; }
+  .b-social-btns:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
+
+.b-social-btn {
+  float: left; }
+
+.b-social-btn-dark {
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  display: inline-block;
+  height: 30px;
+  width: 30px; }
+  .b-social-btn-dark.btn-facebook {
+    background-image: url("../../img/fb_footer@2x.png"); }
+  .b-social-btn-dark.btn-twitter {
+    background-image: url("../../img/twitter_icon_footer@2x.png"); }
+  .b-social-btn-dark.btn-pinterest {
+    background-image: url("../../img/pinterest_icon_footer@2x.png"); }
+  .b-social-btn-dark.btn-googleplus {
+    background-image: url("../../img/g_plus_icon_footer@2x.png"); }

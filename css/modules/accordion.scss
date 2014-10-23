@@ -1,0 +1,22 @@
+@import "../../css/mixins.scss";
+
+#accordion {
+  @include font(16, 19.7);
+  a {
+    @include border-radius(4px);
+    display: block;
+    background: #000;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 2px 0;
+    &:hover {
+      text-shadow: 0 -1px rgba(0, 0, 0, 0.2), 0 0 8px rgba(255, 255, 255, 0.9);
+    }
+  }
+  img {
+    @include img-responsive;
+  }
+}

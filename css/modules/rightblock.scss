@@ -1,0 +1,52 @@
+@import "../../css/mixins.scss";
+
+.l-rightsidebar {
+  .h-info {
+    padding: 10px;
+    color: #fff;
+    & * {
+      color: #fff;
+    }
+
+    input, textarea {
+      color: black;
+    }
+  }
+
+  .b-phone {
+    @include font(39, 48);
+    font-weight: bold;
+  }
+
+  .b-website {
+    @include font(16, 16);
+    font-weight: bold;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .b-duty {
+    @include font(16, 19.7);
+    font-weight: bold;
+    border-collapse: border-collapse;
+    border-spacing: 0;
+    td {
+      padding: 5px;
+    }
+  }
+
+  .b-credit_card {
+    margin: 20px 20px 10px 0;
+  }
+
+  address {
+    @include font(13, 16);
+    font-style: italic;
+  }
+
+  .b-email {
+    @include font(20, 24);
+    font-style: italic;
+  }
+}
