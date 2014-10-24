@@ -12,25 +12,14 @@
 {% block title %}{{ page_title|default(page_name ~ ' | Corpus Christi Business News') }}{% endblock %}
 {% block javascripts %}
     {{ parent() }}
+    <script src='{{asset('themes/'~ theme ~'/js/vendor/modernizr.js') }}'></script>
 {% endblock %}
 {% block stylesheets %}
     {{ parent() }}
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
-    <link type="text/css" rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/base.css') }}">
-    <link type="text/css" rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/layout.css') }}">
     <!-- Modules -->
-    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/breadcrumb.css') }}">
-    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/btns.css') }}">
-    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/accordion.css') }}">
-    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/forms.css') }}">
-    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/rightblock.css') }}">
-    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/leftblock.css') }}">
-    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/articles.css') }}">
-    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/footer.css') }}">
-    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/content.css') }}">
-    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/modules/header.css') }}">
+
     <!-- End Modules -->
-    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/states.css') }}">
+    <link rel='stylesheet' href="{{ asset('themes/'~ theme ~'/css/foundation.css') }}">
 {% endblock %}
 
 {% block body %}
@@ -77,4 +66,6 @@
         </footer>
     </div>
     <link rel='stylesheet' href="{{ asset('bundles/picayuneapplication/opentable/opentable.css') }}">
+    <script src='{{asset('themes/'~ theme ~'/js/vendor/jquery.js') }}'></script>
+    <script src='{{asset('themes/'~ theme ~'/js/foundation.min.js') }}'></script>
 {% endblock %}
