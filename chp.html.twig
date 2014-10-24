@@ -36,6 +36,10 @@
         {% endif %}
     </header>
 
+    <div class="b-content_wr">
+        {{ slider()|raw }}
+    </div>
+
     <div class='row'>
         <div class="large-9 columns" role="content">
         <article>
@@ -60,18 +64,12 @@
         </ul>
     </aside>
 
-
-    <div class='row'>
-        <div class="b-content_wr">
-            {{ slider()|raw }}
+    <footer class='row'>
+        <div class='small-12 columns'>
+            {{ footer_text }}
         </div>
+    </footer>
 
-        <footer class='row'>
-            <div class='small-12 columns'>
-                {{ footer_text }}
-            </div>
-        </footer>
-    </div>
     <link rel='stylesheet' href="{{ asset('bundles/picayuneapplication/opentable/opentable.css') }}">
     <script src='{{asset('themes/'~ theme ~'/js/vendor/jquery.js') }}'></script>
     <script src='{{asset('themes/'~ theme ~'/js/foundation.min.js') }}'></script>
