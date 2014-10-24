@@ -3988,6 +3988,5 @@ th.hide-for-touch {
     display: table-cell !important; } }
 
 .b-social-button {
-  margin-left: auto;
-  margin-right: auto;
+  float: right;
 }
