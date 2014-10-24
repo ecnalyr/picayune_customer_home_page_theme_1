@@ -35,34 +35,41 @@
             </div>
         {% endif %}
     </header>
-    <div class="l-container">
+
+    <div class='row'>
+        <div class="large-9 columns" role="content">
+        <article>
+            <h3>{{ page_name }}</h3>
+            {{ content }}
+        </article>
+    </div>
+
+    <aside class='large-3 columns'>
+        <ul class='side-nav'>
+            <li>{{ social_media_links_widget() }}</li>
+            <li>{{ ad_rotator() }}</li>
+            <li>{{ coupons() }}</li>
+            <li>{{ phones() }}</li>
+            <li>{{ customer_website() }}</li>
+            <li>{{ fax()}}</li>
+            <li>{{ addresses() }}</li>
+            <li>{{ email_form() }}</li>
+            <li>{{ opentable_widget() }}</li>
+            <li>{{ miscellaneous_text() }}</li>
+            <li>{{ expedia() }}</li>
+        </ul>
+    </aside>
+
+
+    <div class='row'>
         <div class="b-content_wr">
             {{ slider()|raw }}
-            <div class="l-content">
-                <div class="l-leftsidebar">
-                    <h1>{{ page_name }}</h1>
-                    <article>{{ content }}</article>
-                </div>
-                <div class="l-rightsidebar">
-                    <aside class="radius_10">
-                        {{ social_media_links_widget() }}
-                        {{ ad_rotator() }}
-                        {{ coupons() }}
-                        {{ phones() }}
-                        {{ customer_website() }}
-                        {{ fax()}}
-                        {{ addresses() }}
-                        {{ email_form() }}
-                        {{ opentable_widget() }}
-                        {{ miscellaneous_text() }}
-                        {{ expedia() }}
-                    </aside>
-                </div>
-            </div>
         </div>
 
-        <footer>
-            {{ footer_text }}
+        <footer class='row'>
+            <div class='small-12 columns'>
+                {{ footer_text }}
+            </div>
         </footer>
     </div>
     <link rel='stylesheet' href="{{ asset('bundles/picayuneapplication/opentable/opentable.css') }}">
