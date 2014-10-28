@@ -3990,3 +3990,9 @@ th.hide-for-touch {
 .b-social-button {
   float: right;
 }
+
+.banner {
+  img {
+    width: 100%;
+  }
+}

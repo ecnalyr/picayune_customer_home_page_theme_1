@@ -24,17 +24,27 @@
 
 {% block body %}
     <header class="l-container">
-        <ul class="b-breadcrumbs f-breadcrumbs h-breadcrumbs">
-            <li class="back"><a class="b-btn-sm f-btn-sm b-btn-sm_black" href="javascript: history.go(-1)">Back</a>&nbsp;»&nbsp;</li>
-            <li><span class="b-breadcrumbs-current f-breadcrumbs-current">{{ page_name }}</span></li>
-            <li>{{ page_edit() }}</li>
-        </ul>
-        {% if logo_image %}
-            <div class="b-logo">
-                <img src="{{ logo_image }}">
+        <div class="row">
+            <div class="large-12 columns">
+              <ul class="inline-list right">
+                <li><a href="javascript: history.go(-1)">Back</a></li>
+                <li>{{ page_name }}</li>
+                <li>{{ page_edit() }}</li>
+              </ul>
             </div>
-        {% endif %}
+        </div>
+
     </header>
+
+    <div>
+        {% if logo_image %}
+        <div class="banner">
+            <img src="{{ logo_image }}">
+        </div>
+        {% endif %}
+    </div
+
+
 
     <div class="b-content_wr">
         {{ slider()|raw }}
@@ -43,7 +53,7 @@
     <div class='row'>
         <div class="large-9 columns" role="content">
         <article>
-            <h3>{{ page_name }}</h3>
+            <h2>{{ page_name }}</h2>
             {{ content }}
         </article>
     </div>
