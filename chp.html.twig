@@ -38,10 +38,11 @@
 
     <div>
         {% if logo_image %}
-        <div>
+        <div class='logo-container'>
             <img src="{{ logo_image }}" class='banner'>
         </div>
         {% endif %}
+        <h1 class='text-on-logo'>{{ page_name }}</h1>
     </div
 
 
@@ -53,7 +54,6 @@
     <div class='row'>
         <div class="large-9 columns" role="content">
         <article>
-            <h2>{{ page_name }}</h2>
             {{ content }}
         </article>
     </div>

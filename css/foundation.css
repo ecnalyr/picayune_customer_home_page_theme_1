@@ -3994,3 +3994,13 @@ th.hide-for-touch {
 .banner {
   width: 100%;
 }
+
+.logo-container {
+    position:relative;
+}
+.logo-container .text-on-logo {
+    position:absolute;
+    top:10%;
+    left:25%;
+    color: white;
+}
